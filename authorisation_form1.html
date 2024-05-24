@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Authorization to Store Personal Data Outside Rwanda</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: #305670;
+    }
+    .container {
+      position: relative;
+      max-width: 700px;
+      width: 100%;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .container header {
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: 500;
+      text-align: center;
+    }
+    .container .form {
+      margin-top: 30px;
+    }
+    .form .input-box {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .input-box label {
+      color: #333;
+    }
+    .form :where(.input-box input, .select-box select, textarea) {
+      position: relative;
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      color: #707070;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0 15px;
+    }
+    .form .input-box input, .form .select-box select, .form textarea {
+      height: 50px;
+    }
+    .form textarea {
+      height: 100px;
+      padding: 10px;
+    }
+    .input-box input:focus, .form textarea:focus {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
+    .form .column {
+      display: flex;
+      column-gap: 15px;
+    }
+    .form button {
+      height: 55px;
+      width: 100%;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 30px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: rgb(130, 106, 251);
+    }
+    .form button:hover {
+      background: rgb(86, 78, 195);
+    }
+    .form .input-box.small-checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+    }
+    .form .input-box.small-checkbox input {
+      width: auto;
+      height: auto;
+      margin-right: 8px;
+    }
+    .form .input-box.small-checkbox label {
+      margin: 0;
+    }
+    @media screen and (max-width: 500px) {
+      .form .column {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <header>Authorization to Store Personal Data Outside Rwanda</header>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Organization Name</label>
+        <input type="text" placeholder="Enter organization name" required />
+      </div>
+      <div class="input-box">
+        <label>Registered as Data Controller, Data Processor, or Both with NCSA?</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select an option</option>
+            <option>Data Controller</option>
+            <option>Data Processor</option>
+            <option>Both</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Registration Number as Data Controller (if applicable)</label>
+        <input type="text" placeholder="Enter registration number" />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Issued on</label>
+          <input type="date" required />
+        </div>
+        <div class="input-box">
+          <label>Valid until</label>
+          <input type="date" required />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Registration Number as Data Processor (if applicable)</label>
+        <input type="text" placeholder="Enter registration number" />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Issued on</label>
+          <input type="date" required />
+        </div>
+        <div class="input-box">
+          <label>Valid until</label>
+          <input type="date" required />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Type of Organization</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select an option</option>
+            <option>Public</option>
+            <option>Private</option>
+            <option>NGO</option>
+            <option>Development Partner</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Sector of Organization</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select your sector</option>
+            <option>Finance</option>
+            <option>Telecommunication</option>
+            <option>Health</option>
+            <option>Education</option>
+            <option>Aviation</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Address</label>
+          <input type="text" placeholder="Enter address" required />
+        </div>
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter phone number" required />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter email address" required />
+      </div>
+      <div class="input-box">
+        <label>Website (if applicable)</label>
+        <input type="text" placeholder="Enter website" />
+      </div>
+      <div class="input-box">
+        <label>Data Protection Officer</label>
+        <input type="text" placeholder="Enter name of data protection officer" required />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter phone number" required />
+        </div>
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter email address" required />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>List Categories of Data Subjects</label>
+        <textarea placeholder="e.g., clients, employees, shareholders, students, patients, etc." required></textarea>
+      </div>
+      <div class="input-box">
+        <label>Describe Personal Data to be Stored</label>
+        <textarea placeholder="Specify elements of personal data included within each category of data subject" required></textarea>
+      </div>
+      <div class="input-box">
+        <label>Reasons for Storing Data Outside Rwanda</label>
+        <textarea placeholder="Provide reasons for storing data outside Rwanda" required></textarea>
+      </div>
+      <div class="input-box">
+        <label>Dataset Size/Volume</label>
+        <textarea placeholder="Number of data subjects concerned, e.g., 100, 1000, 1500, etc." required></textarea>
+      </div>
+      <div class="input-box small-checkbox">
+        <input type="checkbox" id="terms" required />
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+      <button type="submit">Submit</button>
+      <a href="authorisation_form2.html" > <button>Next</button></a>
+    </form>
+  </section>
+</body>
+</html>

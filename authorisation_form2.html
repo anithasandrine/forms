@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Authorization to Store Personal Data Outside Rwanda</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: #305670;
+    }
+    .container {
+      position: relative;
+      max-width: 700px;
+      width: 100%;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .container header {
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: 500;
+      text-align: center;
+    }
+    .container .form {
+      margin-top: 30px;
+    }
+    .form .input-box {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .input-box label {
+      color: #333;
+    }
+    .form :where(.input-box input, .select-box select, textarea) {
+      position: relative;
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      color: #707070;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0 15px;
+    }
+    .form .input-box input, .form .select-box select, .form textarea {
+      height: 50px;
+    }
+    .form textarea {
+      height: 100px;
+      padding: 10px;
+    }
+    .input-box input:focus, .form textarea:focus {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
+    .form .column {
+      display: flex;
+      column-gap: 15px;
+    }
+    .form button {
+      height: 55px;
+      width: 100%;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 30px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: rgb(130, 106, 251);
+    }
+    .form button:hover {
+      background: rgb(86, 78, 195);
+    }
+    .form .input-box.small-checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+    }
+    .form .input-box.small-checkbox input {
+      width: auto;
+      height: auto;
+      margin-right: 8px;
+    }
+    .form .input-box.small-checkbox label {
+      margin: 0;
+    }
+    @media screen and (max-width: 500px) {
+      .form .column {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <header"><b>Details Of Sensitive Personal  Data To Store Outside  Rwanda</b></header>
+    <form action="#" class="form">
+      
+      <!-- SECTION 3 – DETAILS OF SENSITIVE PERSONAL DATA TO STORE OUTSIDE RWANDA -->
+      <div class="input-box">
+        <label></label>
+      </div><br>
+      <div class="input-box">
+        <label> Full Name:</label>
+        <input type="text" required />
+      </div>
+      <div class="input-box">
+        <label> Select If Applicable or Not Applicable:</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select an option</option>
+            <option >Applicable</option>
+           
+            <option>Not Applicable</option>
+            
+          </select>
+        </div><br>
+      </div>
+      <!-- Type of Sensitive Personal Data -->
+
+
+      <div class="input-box">
+        <label> Please select the appropriate type of sensitive personal data you store:</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select an option</option>
+            <option >Person’s race</option>
+            <option >Political opinion</option> 
+             <option >Religious or philosophical beliefs</option> 
+              <option >Social origin</option>
+            <option>Not Applicable</option>
+            <option >Health status</option>
+            <option >Sexual life or family details</option>
+            <option >Genetic or biometric information</option>
+            <option >Health status</option>
+            <option >Criminal records</option>
+            <option >Medical records</option>
+            
+          </select>
+        </div><br>
+      </div>
+      
+
+      <!-- SECTION 4 – DETAILS OF HOSTING SERVICE PROVIDERS -->
+      <div class="input-box">
+        <label> <b>Details Of Hosting Service Providers</b></label>
+      </div>
+      <!-- Name(s) of Hosting Service Provider(s) -->
+      <div class="input-box">
+        <label>Name(s) of Hosting Service Provider(s)</label>
+        <input type="text" placeholder="Who will store personal data on your behalf?" required />
+        <input type="text" placeholder="Service Provider Name 1" required />
+        <input type="text" placeholder="Service Provider Name 2" required />
+      </div>
+      <!-- Destination country(ies) -->
+      <div class="column">
+        <div class="input-box">
+          <label>Destination country(ies)</label>
+          <input type="text" placeholder="Primary storage" required />
+          <input type="text" placeholder="Primary storage" required />
+        </div>
+        <div class="input-box">
+          <label>Destination country(ies)</label>
+          <input type="text" placeholder="Disaster Recovery (DR)" required />
+          <input type="text" placeholder="Disaster Recovery (DR)" required />
+        </div>
+      </div>
+      <!-- Type of Hosting Services -->
+      
+
+
+
+      <div class="input-box">
+        <label> Type of Hosting Services:</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select an option</option>
+            <option >Shared Hosting</option>
+            <option >VPS hosting</option> 
+             <option >Dedicated Server Hosting</option> 
+              <option >Cloud Hosting</option>
+            
+          </select>
+        </div><br>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Involvement of third party(ies) -->
+      <div class="column">
+        <div class="input-box">
+          <label>Involvement of third parties</label>
+          <input type="text" placeholder="Name of third party(ies)" required />
+          <input type="text" placeholder="Name of third party(ies)" required />
+        </div>
+        <div class="input-box">
+          <label>Involvement of third party(ies)</label>
+          <input type="text" placeholder="Name of third party(ies)" required />
+          <input type="text" placeholder="Name of third party(ies)" required />
+        </div>
+      </div>
+      <!-- Applicable Personal Data Protection and Privacy Laws -->
+      <div class="input-box">
+        <label>Applicable Personal Data Protection and Privacy Laws</label>
+        <textarea placeholder="What are the data protection laws of country(ies) the personal data will be stored to with respect to the country(ies) of destination?" required></textarea>
+      </div>
+      <!-- Certification and Signature -->
+      <div class="input-box">
+       
+      </div>
+      <div class="column">
+       
+        <div class="input-box">
+          <label>Your Position:</label>
+          <input type="text" required />
+        </div>
+        <div class="input-box">
+          <label>Date:</label>
+          <input type="date" required />
+        </div>
+        
+      </div>
+
+      <!-- SECTION 5 – DETAILS OF PROTECTION FOR PERSONAL DATA TO STORE OUTSIDE RWANDA -->
+      <div class="input-box">
+        <label> Details Of Protection For Personal Data To Store Outside of Rwanda</label>
+      </div>
+      <!-- Safeguards for Personal Data -->
+      <div class="input-box">
+        <label>Safeguards, security measures, and mechanisms implemented to protect personal data by Data controller or Data processor</label>
+        <textarea placeholder="What are technical and organizational measures put in place to protect personal data before being stored?" required></textarea>
+      </div>
+      <!-- Safeguards by Hosting Service Providers -->
+      <div class="input-box">
+        <label>Safeguards, security measures, and mechanisms implemented to protect personal data by hosting service provider(s)</label>
+        <textarea placeholder="What are technical and organizational measures do the hosting service providers have in place to protect personal data?" required></textarea>
+      </div>
+
+      <!-- Terms and Conditions -->
+      <div class="input-box small-checkbox">
+        <input type="checkbox" id="terms" required />
+        <label>I certify that the above information is correct and complete and hereby apply to be authorized to store personal data outside Rwanda under Law No 058/2021 of 13/10/2021 relating to the protection of personal data and privacy.</label>
+      </div>
+      <button type="submit">Submit</button>
+      <a href="authorisation_form1.html" > <button>Back</button></a>
+    </form>
+  </section>
+</body>
+</html>
