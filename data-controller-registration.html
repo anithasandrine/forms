@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Application Form - Registration as a Data Controller</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: #305670;
+    }
+    .container {
+      position: relative;
+      max-width: 700px;
+      width: 100%;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .container header {
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: 500;
+      text-align: center;
+    }
+    .container .form {
+      margin-top: 30px;
+    }
+    .form .input-box {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .input-box label {
+      color: #333;
+    }
+    .form :where(.input-box input, .select-box select, textarea) {
+      position: relative;
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      color: #707070;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0 15px;
+    }
+    .form .input-box input, .form .select-box select, .form textarea {
+      height: 50px;
+    }
+    .form textarea {
+      height: 100px;
+      padding: 10px;
+      resize: vertical;
+    }
+    .input-box input:focus, .form textarea:focus {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
+    .form .column {
+      display: flex;
+      column-gap: 15px;
+    }
+    .form .column .input-box {
+      flex: 1;
+    }
+    .form .select-box {
+      position: relative;
+      height: 50px;
+      width: 100%;
+    }
+    .form button {
+      height: 55px;
+      width: 100%;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 30px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: rgb(130, 106, 251);
+    }
+    .form button:hover {
+      background: rgb(86, 78, 195);
+    }
+    .form .input-box.small-checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+    }
+    .form .input-box.small-checkbox input {
+      width: auto;
+      height: auto;
+      margin-right: 8px;
+    }
+    .form .input-box.small-checkbox label {
+      margin: 0;
+    }
+    @media screen and (max-width: 500px) {
+      .form .column {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <header>Registration as a Data Controller</header>
+    <form action="#" class="form">
+
+      <!-- SECTION 1 – APPLICANT DETAILS -->
+      <div class="input-box">
+        <label>Entity Name</label>
+        <input type="text" placeholder="Enter entity name" required />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Registration Number (if applicable)</label>
+          <input type="text" placeholder="Enter registration number" />
+        </div>
+        <div class="input-box">
+          <label>License Number (if applicable)</label>
+          <input type="text" placeholder="Enter license number" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Law No (if applicable)</label>
+          <input type="text" placeholder="Enter law number" />
+        </div>
+        <div class="input-box">
+          <label>Presidential order No (if applicable)</label>
+          <input type="text" placeholder="Enter presidential order number" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Nature of Entity</label>
+          <div class="select-box">
+            <select required>
+              <option hidden>Select an option</option>
+              <option>Public</option>
+              <option>Private</option>
+              <option>NGO</option>
+              <option>Faith Based Organization</option>
+              <option>Political Organization</option>
+              <option>Development Partner</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label>Entity Sector</label>
+          <input type="text" placeholder="Enter entity sector" required />
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Entity Address</label>
+          <input type="text" placeholder="Enter address (Country, Province, District, Sector)" required />
+        </div>
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter phone number" required />
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter email address" required />
+        </div>
+        <div class="input-box">
+          <label>Website</label>
+          <input type="text" placeholder="Enter website URL" />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Data Protection Officer</label>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Name</label>
+          <input type="text" placeholder="Enter name" required />
+        </div>
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter phone number" required />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter email address" required />
+      </div>
+      <div class="input-box">
+        <label>Representative In Rwanda (if applicant is established outside of Rwanda)</label>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Name</label>
+          <input type="text" placeholder="Enter name" />
+        </div>
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter phone number" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Address</label>
+          <input type="text" placeholder="Enter address (Country, Province, District, Sector)" />
+        </div>
+        <div class="input-box">
+          <label>Email</label>
+          <input type="email" placeholder="Enter email address" />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Website</label>
+        <input type="text" placeholder="Enter website URL" />
+      </div>
+
+      <!-- SECTION 2 – PERSONAL DATA -->
+      <div class="column">
+        <div class="input-box">
+          <label>Category of Data Subjects</label>
+          <input type="text" placeholder="e.g: employee, client, supplier, or shareholder, students, patients, etc." required />
+        </div>
+        <div class="input-box">
+          <label>Description of Personal Data</label>
+          <input type="text" placeholder="e.g:name, address, or National Identity Card Number, etc." required />
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Purpose of Processing</label>
+          <input type="text" placeholder="e.g:service provision, HR management, invoicing, KYC, etc." required />
+        </div>
+        <div class="input-box">
+          <label>Category of Recipient(s) to Whom Personal Data Is Disclosed</label>
+          <input type="text" placeholder="e.g: Regulators, Partners, Investors, etc." required />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Ground for Processing</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select an option</option>
+            <option>Consent of data subject</option>
+            <option>Performance of contract</option>
+            <option>Compliance with a legal obligation</option>
+            <option>Protection of vital interests</option>
+            <option>Public interest</option>
+            <option>Legitimate interests</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Storage Period</label>
+        <input type="text" placeholder="Enter storage period" required />
+      </div>
+      <div class="input-box">
+        <label>Means of Collection of Personal Data</label>
+        <textarea placeholder="e.g: Directly from data subject, third parties, etc." required></textarea>
+      </div>
+
+      <!-- SECTION 3 – CROSS BORDER TRANSFER OF PERSONAL DATA -->
+      <div class="column">
+        <div class="input-box">
+          <label>Recipient of Data Transfer</label>
+          <input type="text" placeholder="Enter recipient of data transfer" />
+        </div>
+        <div class="input-box">
+          <label>Country</label>
+          <input type="text" placeholder="Enter country" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Purpose of Transfer</label>
+          <input type="text" placeholder="Enter purpose of transfer" />
+        </div>
+        <div class="input-box">
+          <label>Category of Data Being Transferred</label>
+          <input type="text" placeholder="Enter category of data being transferred" />
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Details of Protection Measures</label>
+        <input type="text" placeholder="e.g., Data Protection Agreement" />
+      </div>
+
+      <!-- SECTION 4 – DATA SECURITY -->
+      <div class="input-box">
+        <label>Description of Technical and Organizational Security Measures</label>
+        <textarea placeholder="Enter details" required></textarea>
+      </div>
+
+      <!-- DECLARATION -->
+      <div class="input"><br>
+        
+        <div class="small-checkbox">
+          <input type="checkbox" required />
+          <label>I confirm that the above information is correct and complete, and that all required supporting documentation is provided.</label>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
