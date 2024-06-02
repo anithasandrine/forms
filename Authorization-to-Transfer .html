@@ -122,18 +122,18 @@
 
       <!-- SECTION 1 – APPLICANT DETAILS -->
       <div class="input-box">
-        <label>OPERATIONAL DETAILS</label>
+        <label>Operational Datails</label>
         <input type="text" placeholder="Organization Name" required />
       </div>
       <div class="input-box">
         <label>Are you registered as a Data Controller, Data Processor or Both with NCSA?</label>
-        <div class="small-checkbox">
-          <input type="checkbox" id="data_controller" />
-          <label for="data_controller">Data Controller</label>
-        </div>
-        <div class="small-checkbox">
-          <input type="checkbox" id="data_processor" />
-          <label for="data_processor">Data Processor</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select an option</option>
+            <option>Data Controller</option>
+            <option>Data Processor</option>
+            <option>Both</option>
+          </select>
         </div>
       </div>
       <div class="column">
@@ -164,55 +164,34 @@
           <input type="date" />
         </div>
       </div>
-      <div class="input-box">
-        <label>Type of organization</label>
-        <div class="small-checkbox">
-          <input type="checkbox" id="public_org" />
-          <label for="public_org">Public</label>
-        </div>
-        <div class="small-checkbox">
-          <input type="checkbox" id="private_org" />
-          <label for="private_org">Private</label>
-        </div>
-        <div class="small-checkbox">
-          <input type="checkbox" id="ngo_org" />
-          <label for="ngo_org">NGO</label>
-        </div>
-        <div class="small-checkbox">
-          <input type="checkbox" id="development_partner_org" />
-          <label for="development_partner_org">Development Partner</label>
-        </div>
-        <div class="small-checkbox">
-          <input type="checkbox" id="other_org" />
-          <label for="other_org">Other</label>
-        </div>
-      </div>
-      <div class="input-box">
-        <label>Sector of organization</label>
-        <div class="small-checkbox">
-          <input type="checkbox" id="finance_sector" />
-          <label for="finance_sector">Finance</label>
-        </div>
-        <div class="small-checkbox">
-          <input type="checkbox" id="telecommunication_sector" />
-          <label for="telecommunication_sector">Telecommunication</label>
-        </div>
-        <input type="checkbox" id="health_sector" />
-        <label for="health_sector">Health</label>
-      </div>
-      <div class="small-checkbox">
-        <input type="checkbox" id="education_sector" />
-        <label for="education_sector">Education</label>
-      </div>
-      <div class="small-checkbox">
-        <input type="checkbox" id="aviation_sector" />
-        <label for="aviation_sector">Aviation</label>
-      </div>
-      <div class="small-checkbox">
-        <input type="checkbox" id="other_sector" />
-        <label for="other_sector">Other</label>
-      </div>
+      
+<div class="input-box">
+  <label>Type of organization</label>
+  <div class="select-box">
+    <select required>
+      <option hidden>Select an option</option>
+      <option>Public</option>
+      <option>Private</option>
+      <option>NGO</option>
+      <option>Development Partner</option>
+      <option>Other</option>
+    </select>
+  </div>
+</div>
+<div class="input-box">
+    <label>Sector of organization</label>
+    <div class="select-box">
+      <select required>
+        <option hidden>Select an option</option>
+        <option>Finance</option>
+        <option>Telecommunication</option>
+        <option>Health</option>
+        <option>Education</option>
+        <option>Aviation</option>
+        <option>Other</option>
+      </select>
     </div>
+  </div>
     <div class="input-box">
       <label>Address</label>
       <input type="text" placeholder="Enter address" required />
@@ -232,7 +211,7 @@
 
     <!-- DATA PROTECTION OFFICER -->
     <div class="input-box">
-      <label>DATA PROTECTION OFFICER</label>
+      <label>Data Protection Officer</label>
     </div>
     <div class="column">
       <div class="input-box">
@@ -252,74 +231,80 @@
     <!-- SECTION 2 – DETAILS OF PERSONAL DATA TO BE TRANSFERRED OUTSIDE RWANDA -->
     <div class="column">
       <div class="input-box">
-        <label>CATEGORY OF DATA SUBJECTS</label>
+        <label>Category Of Data Subjects</label>
         <input type="text" placeholder="e.g.: employee, client, supplier, or shareholder, students, patients, etc." required />
       </div>
       <div class="input-box">
-        <label>DESCRIPTION OF PERSONAL DATA</label>
+        <label>Description Of Personal Data</label>
         <input type="text" placeholder="e.g.: name, address, or National Identity Card Number, etc." required />
       </div>
     </div>
     <div class="column">
       <div class="input-box">
-        <label>PURPOSE OF PROCESSING</label>
+        <label>Pupose Of Processing</label>
         <input type="text" placeholder="e.g.: service provision, HR management, invoicing, KYC, etc." required />
       </div>
       <div class="input-box">
-        <label>CATEGORY OF RECIPIENT(S) TO WHOM PERSONAL DATA IS DISCLOSED</label>
+        <label>Category Of Recipients To Whom Personal Data Is Disclosed</label>
         <input type="text" placeholder="e.g.: Regulators, Partners, Investors, etc." required />
       </div>
     </div>
+    
+
+
     <div class="input-box">
-      <label>GROUND FOR PROCESSING</label>
-      <select required>
-        <option hidden>Select an option</option>
-        <option>Consent of data subject</option>
-        <option>Performance of contract</option>
-        <option>Compliance with a legal obligation</option>
-        <option>Protection of vital interests</option>
-        <option>Public interest</option>
-        <option>Legitimate interests</option>
-      </select>
-    </div>
+        <label>Ground for Processing</label>
+        <div class="select-box">
+          <select required>
+            <option hidden>Select an option</option>
+            <option>Consent of data subject</option>
+            <option>Performance of contract</option>
+            <option>Compliance with a legal obligation</option>
+            <option>Protection of vital interests</option>
+            <option>Public interest</option>
+            <option>Legitimate interests</option>
+          </select>
+        </div>
+      </div>
+
     <div class="input-box">
-      <label>STORAGE PERIOD</label>
+      <label>Storage Period</label>
       <input type="text" placeholder="Enter storage period" required />
     </div>
     <div class="input-box">
-      <label>MEANS OF COLLECTION OF PERSONAL DATA</label>
+      <label>Means OF Collection Of Personal Data </label>
       <textarea placeholder="e.g.: Directly from data subject, third parties, etc." required></textarea>
     </div>
 
     <!-- SECTION 3 – CROSS BORDER TRANSFER OF PERSONAL DATA -->
     <div class="column">
       <div class="input-box">
-        <label>RECIPIENT OF DATA TRANSFER</label>
+        <label>Recipient Of Data Transfer</label>
         <input type="text" placeholder="Enter recipient of data transfer" />
       </div>
       <div class="input-box">
-        <label>COUNTRY</label>
+        <label>Country</label>
         <input type="text" placeholder="Enter country" />
       </div>
     </div>
     <div class="column">
       <div class="input-box">
-        <label>PURPOSE OF TRANSFER</label>
+        <label>Purpose Of Transfer</label>
         <input type="text" placeholder="Enter purpose of transfer" />
       </div>
       <div class="input-box">
-        <label>CATEGORY OF DATA BEING TRANSFERRED</label>
+        <label>Category oF Data Being Transferred</label>
         <input type="text" placeholder="Enter category of data being transferred" />
       </div>
     </div>
     <div class="input-box">
-      <label>DETAILS OF PROTECTION MEASURES</label>
+      <label>Details Of Protection Measures</label>
       <input type="text" placeholder="e.g., Data Protection Agreement" />
     </div>
 
     <!-- SECTION 4 – DATA SECURITY -->
     <div class="input-box">
-      <label>DESCRIPTION OF TECHNICAL AND ORGANIZATIONAL SECURITY MEASURES</label>
+      <label>Description Of Technical and Organisational Security Measures</label>
       <textarea placeholder="Enter details" required></textarea>
     </div>
 
